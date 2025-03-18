@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Começar no Desenvolvimento Web - Vanderson Andrade</title>
+
+    <!-- Adicionar o Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Adicionar o AOS (Animações) via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Adicionar o JavaScript para animações -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+<!-- Header -->
+<header class="fixed top-0 left-0 w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 shadow-lg z-50">
+    <div class="container mx-auto flex items-center justify-between px-4">
+        <!-- Branding (Logo e Nome) -->
+        <div class="flex items-center space-x-4">
+            <img src="../assets/images/logo.jpg" alt="Logo" class="w-10 h-10 rounded-full">
+            <h1 class="text-xl font-semibold">Vanderson Andrade</h1>
+        </div>
+
+        <!-- Botão de "casinha" para voltar à página inicial -->
+        <a href="../pagina_inicial.php" class="text-white hover:text-yellow-300 focus:outline-none">
+            <img src="../assets/images/voltar.jpg" alt="Voltar" class="h-6 w-6">
+        </a>
+    </div>
+</header>
+
+<!-- Espaço extra para evitar sobreposição do header -->
+<section class="container mx-auto px-4 pt-20 pb-16" data-aos="fade-up">
+    <article class="bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-semibold text-blue-600 mb-4">Entendendo o JavaScript Assíncrono</h2>
+        <p><strong>Data:</strong> 5 de março de 2025</p>
+
+        <p class="mt-6">O JavaScript assíncrono pode parecer complicado no começo, mas é uma das partes mais poderosas da linguagem...</p>
+
+        <h3 class="text-xl font-semibold text-gray-800 mt-8">O que é JavaScript Assíncrono?</h3>
+        <p class="text-gray-600 mt-4">JavaScript é uma linguagem de programação síncrona...</p>
+
+        <h3 class="text-xl font-semibold text-gray-800 mt-8">Callbacks</h3>
+        <pre class="bg-gray-200 p-4 rounded-lg overflow-x-auto">
+            <code class="text-gray-700">
+&lt;script&gt;
+function fetchData(callback) {
+    setTimeout(() => {
+        const data = "Dados carregados!";
+        callback(data);
+    }, 2000);
+}
+
+fetchData(function(data) {
+    console.log(data);  // Exibe: "Dados carregados!"
+});
+&lt;/script&gt;
+            </code>
+        </pre>
+
+        <h3 class="text-xl font-semibold text-gray-800 mt-8">Promises</h3>
+        <pre class="bg-gray-200 p-4 rounded-lg overflow-x-auto">
+            <code class="text-gray-700">
+function fetchData() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const data = "Dados carregados!";
+            resolve(data);
+        }, 2000);
+    });
+}
+
+fetchData().then((data) => {
+    console.log(data);  // Exibe: "Dados carregados!"
+}).catch((error) => {
+    console.error(error);
+});
+            </code>
+        </pre>
+
+        <h3 class="text-xl font-semibold text-gray-800 mt-8">Async/Await</h3>
+        <pre class="bg-gray-200 p-4 rounded-lg overflow-x-auto">
+            <code class="text-gray-700">
+&lt;script&gt;
+async function fetchData() {
+    const data = await new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Dados carregados!");
+        }, 2000);
+    });
+    console.log(data);  // Exibe: "Dados carregados!"
+}
+
+fetchData();
+&lt;/script&gt;
+            </code>
+        </pre>
+
+        <h3 class="text-xl font-semibold text-gray-800 mt-8">Conclusão</h3>
+        <p class="text-gray-600 mt-4">O JavaScript assíncrono é essencial para criar aplicações web rápidas...</p>
+
+        <p class="mt-8 text-gray-600">Referências:</p>
+        <ul class="list-disc pl-6">
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/async_function" target="_blank" class="text-blue-600">MDN Web Docs - Async Function</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Using_promises" target="_blank" class="text-blue-600">MDN Web Docs - Promises</a></li>
+            <li><a href="https://www.freecodecamp.org/news/javascript-promises-explained-with-examples/" target="_blank" class="text-blue-600">freeCodeCamp - JavaScript Promises</a></li>
+        </ul>
+    </article>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-8">
+    <p class="text-center">&copy; 2025 Vanderson Andrade. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    // Inicializar AOS (para animações)
+    AOS.init();
+</script>
+</body>
+</html>

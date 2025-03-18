@@ -1,0 +1,76 @@
+/* Responsividade para telas pequenas (até 768px) */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;  /* Modal ocupa 90% da largura da tela */
+        padding: 16px;  /* Reduzir padding para dispositivos móveis */
+        font-size: 14px;  /* Menor tamanho de fonte */
+        max-width: 100%;  /* Garantir que o modal não ultrapasse a largura da tela */
+        margin: 0 auto;  /* Centralizar o modal */
+    }
+
+    .modal {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Centraliza o modal verticalmente */
+    }
+
+    .close-modal {
+        top: 8px;
+        right: 8px;
+        font-size: 16px;  /* Ajustar o tamanho do botão */
+        padding: 8px; /* Diminuir o padding do botão */
+    }
+}
+
+/* Responsividade para telas muito pequenas (até 480px, como smartphones pequenos) */
+@media (max-width: 480px) {
+    .modal-content {
+        width: 85%;  /* Modal ocupa 85% da largura da tela */
+        padding: 12px;  /* Reduz ainda mais o padding */
+        font-size: 12px;  /* Fonte um pouco menor */
+    }
+
+    .modal {
+        padding: 10px; /* Adicionar padding ao redor do modal para garantir que o conteúdo não fique colado */
+    }
+
+    .close-modal {
+        top: 6px;
+        right: 6px;
+        font-size: 14px;  /* Menor botão de fechar */
+    }
+}
+
+/* Responsividade para telas médias (até 600px, como tablets em modo retrato) */
+@media (max-width: 600px) {
+    .modal-content {
+        width: 90%;  /* Modal ocupa 90% da largura da tela */
+        padding: 14px;  /* Um meio termo no padding */
+        font-size: 13px;  /* Menor tamanho de fonte para otimizar o layout */
+    }
+
+    .close-modal {
+        top: 10px;
+        right: 10px;
+        font-size: 15px;  /* Ajustar o tamanho do botão */
+    }
+}
+
+/* Responsividade para telas maiores, como tablets em modo paisagem e dispositivos de maior resolução */
+@media (max-width: 1024px) {
+    .modal-content {
+        width: 75%;  /* Modal ocupa 75% da largura da tela */
+        padding: 20px;  /* Maior padding */
+        font-size: 16px;  /* Fonte um pouco maior para visualização confortável */
+    }
+
+    .modal {
+        padding: 20px;  /* Garantir que o conteúdo tenha espaçamento adequado */
+    }
+
+    .close-modal {
+        top: 16px;
+        right: 16px;
+        font-size: 18px;  /* Tamanho adequado para o botão de fechar */
+    }
+}
