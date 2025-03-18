@@ -49,26 +49,7 @@ Bem-vindo ao meu portfólio interativo! Este site foi desenvolvido para apresent
 2. Acesse a pasta do projeto:  
     ```bash
     cd portfolio
-    ```
-
-3. Se estiver usando **Vite**, inicie o servidor de desenvolvimento:  
-    ```bash
-    npm install
-    npm run dev
-    ```
-    Caso contrário, apenas abra o `index.html` no navegador.  
-
----
-
-## 🤝 Como Contribuir  
-
-Contribuições são bem-vindas! Siga os passos abaixo para colaborar:  
-
-1. Faça um fork do projeto.  
-2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`).  
-3. Faça suas alterações e commit (`git commit -m 'feat: Adiciona nova funcionalidade'`).  
-4. Envie para o repositório remoto (`git push origin feature/nova-feature`).  
-5. Abra um **Pull Request** para revisão.  
+    apenas abra o `index.html` no navegador.  
 
 ---
 
