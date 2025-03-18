@@ -37,7 +37,7 @@ Bem-vindo ao meu portfólio interativo! Este site foi desenvolvido para apresent
 
 1. Clone o repositório:  
     ```bash
-    git clone https://github.com/VandinDev221/portfolio.git
+    git clone https://github.com/VandinDev221/portfolio-.git
     ```
 
 2. Acesse a pasta do projeto:  
