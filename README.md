@@ -6,12 +6,6 @@ Bem-vindo ao meu portfólio interativo! Este site foi desenvolvido para apresent
 
 ---
 
-## 📸 Demonstração  
-<!-- Adicione uma captura de tela ou GIF do portfólio -->
-![Portfolio Screenshot](./screenshot.png) 
-
----
-
 ## 🎯 Funcionalidades  
 
 ✅ **Seção Sobre Mim** – Estudante de Tecnólogo em Desenvolvimento Web| Laravel, Tailwind CSS, Vite | Técnico em Desenvolvimento    de Sistemas | Especialista em HTML, CSS, PHP, JavaScript.   
